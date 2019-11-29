@@ -13,16 +13,35 @@ set number
 set history=100
 set nowrap
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
+set cindent
+set smarttab
 set smartindent
 set autoindent
+set copyindent
+set nostartofline
 set hlsearch
 set showmatch
 set laststatus=2
 set shortmess+=F
 set noshowmode
 set updatetime=100
+set incsearch
+set ignorecase
+set smartcase
+set infercase
+set backspace=indent,eol,start
+set scrolloff=4
+set splitbelow
+set wildmenu
+set wildmode=longest:full,list:full
+set completeopt=longest,menuone,preview
+set completeopt-=preview
+set nobackup
+set noswapfile
+set pumheight=15
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd StdinReadPre * let s:std_in=1
