@@ -1,5 +1,9 @@
 execute pathogen#infect()
 
+let g:gruvbox_italic=1
+colorscheme gruvbox
+set background=dark
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -82,3 +86,4 @@ let g:airline_symbols.maxlinenr = ''
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+
